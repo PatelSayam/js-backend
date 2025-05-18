@@ -1,12 +1,15 @@
 // configuration of env using require syntax
-// require("dotenv").config({path: './env'}); 
+// require("dotenv").config({path: '../.env'}); 
 
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
+import app from './app.js'
 
 dotenv.config({
-    path: './env'
+    path: './.env'
 })
+//path is relative to process.cwd(), not the file location.
+// process.cwd() => gives root folder => here it is /js-backend
 
 connectDB()
 .then(() => {

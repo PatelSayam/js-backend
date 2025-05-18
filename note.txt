@@ -1,1 +1,1 @@
-=> 1. when dealing with databases then also wrap with try and catch or use the async & await 
+=> 1. when dealing with databases then also wrap with try and catch, use the async & await 
